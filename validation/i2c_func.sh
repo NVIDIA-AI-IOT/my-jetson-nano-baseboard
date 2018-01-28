@@ -32,7 +32,7 @@
 echo -e "Please type the bus you wish to check:"
 read selbus
 
-devices=$(i2cdetect -y $selbus)
+devices=$(i2cdetect -r -y $selbus)
 
 echo -e "All devices: \n${devices}. \nPlease type address below:"
 read seldevice
