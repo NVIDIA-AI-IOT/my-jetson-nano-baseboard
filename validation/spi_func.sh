@@ -22,7 +22,7 @@
 # DEALINGS IN THE SOFTWARE.
 
 # install spi-tools if not already installed
-sudo apt-get install spi-tools
+#sudo apt-get install spi-tools
 
 # send data from parent to child
 echo -e "Please type the bus you wish to check:"
@@ -34,24 +34,13 @@ read seldevice
 # send and receive simultaneously
 for i in {1..500}
 do
-	datawrite=$(0x00) | spi-pipe -d /dev/spidev$selbus.$seldevice | read dataread
-	if [[ "$dataread" != "$datawrite" ]]
-	then
-		echo "The test has failed: did not read correct write."
-	fi
-
+	printf '\x01\x82\F3' | spi-pipe -d /dev/spidev$selbus.$seldevice | hexdump -C
 done
 
 # send and receive sequentially
+echo -e "sending and receiving sequentially"
 for i in {1..500}
 do
-	datawrite=$(0x00) | spi-pipe -d /dev/spidev$selbus.$seldevice
-	spi-pipe -d /dev/spidev$selbus.$seldevice < /dev/zero | read dataread
-
-	if [[ "$dataread" != "$datawrite"]]
-	then
-		echo "The test has failed: did not read correct write."
-	fi
+	printf '\x01\x82\F3' | spi-pipe -d /dev/spidev$selbus.$seldevice
+	spi-pipe -d /dev/spidev$selbus.$seldevice -b 16 -n 3 < /dev/zero | hexdump -C
 done
-
-

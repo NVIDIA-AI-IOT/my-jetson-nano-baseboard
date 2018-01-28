@@ -19,7 +19,7 @@ import simpleaudio as sa
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 # DEALINGS IN THE SOFTWARE.
 
-name = "CantinaBand60.wav"
+filename = "CantinaBand60.wav"
 wave_obj = sa.WaveObject.from_wave_file(filename)
 play_obj = wave_obj.play()
 play_obj.wait_done()

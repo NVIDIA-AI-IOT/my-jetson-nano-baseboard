@@ -1,4 +1,4 @@
-# Code adapted by Alexa Jakob from WiseChip's provided I2C code for the QG-2864KLBEG01 display
+# Code adapted from WiseChip's provided I2C code for the QG-2864KLBEG01 display
 # Tests OLED by filling the display, and displaying a picture followed by "hello world"
 
 # Copyright (c) 2021, NVIDIA CORPORATION. All rights reserved.
@@ -30,12 +30,16 @@ RESET = Pin(9, pin.IN)
 SCL = Pin(18, pin.IN)
 SDA = Pin(19) # bidirectional
 
-global addr = 120 # OLED device address
-global bus = SMBus(1)
+global addr
+addr = 120 # OLED device address
+global bus
+bus = SMBus(1)
 
 # instructions are written to address 64, data to address 0
-global ins = 64
-global data = 0
+global ins
+ins = 64
+global data
+data = 0
 
 # coding for picture
 sample = [255,1,1,1,1,1,1,1,1,1,1,1,113,145,113,145,145,113,113,145,113,145,145,113,113,145,113,145,145,113,1,1,

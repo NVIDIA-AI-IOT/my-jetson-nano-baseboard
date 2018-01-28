@@ -24,10 +24,9 @@
 
 for i in {1..100}
 	do
-		sudo bash -c "echo `date '+%s' -d '+ 10 seconds'` > /sys/class/rtc/rtc0/wakealarm" # wake in 10s
-		sudo systemctl suspend # put in deep sleep mode
-
-		sleep 20s
+		echo -e "now awake"
+		echo -e "entering deep sleep mode"
+		sudo rtcwake -m mem -s 30
 	done
 
 exit

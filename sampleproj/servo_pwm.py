@@ -1,4 +1,5 @@
 import Jetson.GPIO as GPIO
+import time
 
 # Copyright (c) 2021, NVIDIA CORPORATION. All rights reserved.
 # Permission is hereby granted, free of charge, to any person obtaining a
@@ -21,13 +22,10 @@ import Jetson.GPIO as GPIO
 
 # script adapted from Jetson-GPIO samples
 # be sure to attach a servo motor to the header J10
+GPIO.setmode(GPIO.TEGRA_SOC)
 
-GPIO.setmode(GPIO.BCM)
-
-# GPIO07 is pin 70 in BCM
-servo = 70
-
-GPIO.setup(servo, GPIO.OUT, initial=GPIO.HIGH)
+servo = "LCD_BL_PW"
+GPIO.setup(servo, GPIO.OUT, initial=GPIO.LOW)
 
 
 p = GPIO.PWM(servo, 50)
