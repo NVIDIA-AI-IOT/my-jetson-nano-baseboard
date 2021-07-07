@@ -22,7 +22,7 @@ Use these files to kickstart your own application-specific baseboard or implemen
 ## Getting Started
 
 You only need a computer to get started right now!
-1.	Install the appropriate version of KiCAD, an open source schematic and layout design program, for your operating system here.
+1.	Install the appropriate version of KiCAD, an open source schematic and layout design program, for your operating system [here](https://www.kicad.org/download/).
 1.	Download this GitHub repository either as a ZIP or on the command line.
 1.	Save the following symbol and footprint libraries to the “Design Files/Libraries” folder (you may have to make an account – alternatively, if you want the practice, you could try making them yourself):
 	a.	[B3SL-1002P](https://octopart.com/b3sl-1002p-omron-9515385)
@@ -35,11 +35,11 @@ You only need a computer to get started right now!
 	h.	[2309413-1](https://www.te.com/usa-en/product-2309413-1.html)
 
 1.	Open the project (.pro) file in KiCAD.
-1.	Add the symbol and footprint libraries as project-specific to your KiCAD program, following this guide.
+1.	Add the symbol and footprint libraries as project-specific to your KiCAD program, following [this guide](https://support.snapeda.com/en/articles/2651507-how-to-import-into-kicad).
 1.	You are now set up to tinker with the files and launch your own hardware designs!
 
 Be sure to download the Jetson Nano Product Design Guide here (NVIDIA Developer account required) to help you with your design.
 
-If you want to make your boards and test them, you’ll need the Jetson Nano module (not included, can be bought as part of the developer kit here). It is also helpful to have electronics equipment like an oscilloscope, a multimeter, and a soldering iron.
+If you want to make your boards and test them, you’ll need the Jetson Nano module (not included, can be bought as part of the developer kit [here](https://developer.nvidia.com/embedded/jetson-nano-developer-kit)). It is also helpful to have electronics equipment like an oscilloscope, a multimeter, and a soldering iron.
 
 
