@@ -1,0 +1,106 @@
+
+================================================
+|                                              |
+|                                              |
+| My Jetson Nano Baseboard Open Source License |
+|					       |
+|                                              |
+================================================
+
+Subject to the terms and conditions of this ‘My Jetson Nano Baseboard’ Open Source License, NVIDIA offers its ‘My Jetson Nano Baseboard’ Design Materials on a royalty-free, open-source basis.
+
+By exercising the rights granted hereunder, You accept and agree to be bound by these terms and conditions. You are granted the rights hereunder in consideration of Your agreement to these terms and conditions. If You do not agree to these terms and conditions, do not download or use the ‘My Jetson Nano Baseboard’ Design Materials.
+
+If You are agreeing to these terms and conditions on behalf of a legal entity, You represent that You have the legal authority to bind the legal entity to these terms and conditions.
+
+In consideration of the mutual covenants contained herein, You agree as follows:
+
+
+==================
+1. DEFINITIONS.
+==================
+
+“Contributor” shall mean LICENSOR and any owner of a Design Contribution.
+
+“Derivative Work” shall mean any work that is based on (or derived from) any portion of the Design Materials. For the purposes of this My Jetson Nano Baseboard Open Source License, Derivative Works shall not include works that remain separable from, or merely link (or bind by name) to the interfaces of, any portion of the Design Materials and Derivative Works thereof.
+
+“Design Contribution” shall mean any work of authorship, design, or inventorship that is contributed under this license to the Design Materials by a person authorized to submit the contribution on behalf of the owner.
+
+“Design Materials” shall mean and include the design information, code, and documentation used in designing a ‘My Jetson Nano Baseboard’, which may include: schematics, board files, netlists, design files, Gerber files, symbol libraries, footprint libraries, bill of materials, software source code, documentation, and configuration files.
+
+“Design Products” shall mean a semiconductor baseboard product or portions thereof designed or manufactured in accordance with a Design Materials or a Derivative Work.
+
+“You” (or “Your”) shall mean an individual or Legal Entity agreeing to the terms and conditions of this My Jetson Nano Baseboard Open Source License.
+
+============================
+2. DESIGN MATERIALS LICENSE.
+============================
+
+Subject to the terms and conditions of this My Jetson Nano Baseboard Open Source License, LICENSOR and each Contributor hereby grant to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable (except as stated in this section) license to the Design Materials to make, have made, use, offer to sell, sell, and have sold the Design Products (the “Purpose”), and to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and distribute the Design Materials and such Derivative Works, and to commercially exploit any mask works included in the Design Materials or such Derivative Works for the Purpose.
+
+You may reproduce and distribute copies of the Design Materials or Derivative Works thereof in any medium, with or without modifications for the Purpose, provided that You meet the following conditions:
+
+1.	You must give any other recipients of the Design Materials or Derivative Works a copy of this My Jetson Nano Baseboard Open Source License; and
+
+2.	You must cause any modified files or other portions of the Design Materials to carry prominent notices stating that You changed such files or other portions; and
+
+3.	You must retain, in any Derivative Works that You distribute, all notices, including copyright, patent, trademark, and attribution notices, from the Design Materials, excluding those notices that do not pertain to any part of the Derivative Works; and
+
+4.	You may add Your own copyright statement to Your modifications and may provide additional or different license terms and conditions for use, reproduction, or distribution of Your modifications, or for any such Derivative Works as a whole, provided Your use, reproduction, and distribution of the Design Materials otherwise complies with the conditions stated in this [Jetson Nano] Open Source License.
+If You institute patent litigation against any entity (including a cross-claim or counterclaim in a lawsuit) alleging that any portion of the Design Materials, a Design Contribution incorporated within the Design Materials, or any portion of a Design Product directly or contributorily infringes any patent, or You seek any declaration that a patent licensed to You under this [Jetson Nano] Open Source License is invalid or unenforceable, then any patent licenses granted to You under this My Jetson Nano Baseboard Open Source License shall terminate as of the date such litigation is filed.
+
+======================================
+3. SUBMISSION OF DESIGN CONTRIBUTIONS.
+======================================
+
+You are not required to submit contributions to the Design Materials, but you may do so at your discretion. Unless You explicitly state otherwise, any Design Contribution intentionally submitted by you for inclusion in the Design Materials shall be provided under the terms and conditions of this My Jetson Nano Baseboard Open Source License, without any additional terms or conditions. 
+
+==============
+4. TRADEMARKS.
+==============
+
+This My Jetson Nano Baseboard Open Source License does not grant permission to use the trade names, trademarks, service marks, or product names (“Marks”) of LICENSOR or any Contributor, except as required for reasonable and customary use in describing the origin of the Design Materials, or as required by regulatory authorities. 
+
+
+=====================
+5. NO IMPLIED RIGHTS.
+=====================
+
+Except for the licenses expressly set forth herein, no other licenses are granted hereunder whether by implication, estoppel or otherwise. This My Jetson Nano Baseboard Open Source License provides You with no implied rights or licenses to the intellectual property of LICENSOR or any Contributor.
+
+
+==========================
+6. DISCLAIMER OF WARRANTY.
+==========================
+
+Unless required by applicable law or agreed to in writing, LICENSOR provides the Design Materials (and each Contributor provides its Design Contributions) on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including, without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE. The Design Materials are not a final product and may not be fully functional, may contain errors or design flaws, and may have reduced or different and reliability standards relative to commercial or existing versions of similar products. Use of the Design Materials may result in unexpected results or other unpredictable damage or loss.
+
+You are solely responsible for determining the appropriateness of Your use of the Design Materials, or any Design Product, and You assume all associated risks, including but not limited to the risks and costs of damage to or loss of data, programs or equipment, and unavailability or interruption of operations.
+
+You agree to comply with all required regulations and safety standards applicable to Your use of the Design Materials, including in each jurisdiction of desired use, distribution, or sale. The Design Materials have not been designed, tested or certified for use in connection with the design, construction, maintenance, and/or operation of any system where the use of failure of such system could result in a situation that threatens the safety of human life or results in catastrophic damages including severe physical harm or property damages (for example, use in connection with any healthcare or other life critical applications), and You are solely responsible for use of the Design Materials or any resultant Design Product in any such system. This My Jetson Nano Baseboard Open Source License is not intended to provide You with all the permissions required for Your intended use of the Design Materials. Your use of the Design Materials may be limited by regulatory requirements or permissions, quality management controls, and other rights and restrictions. 
+
+You acknowledge that the Design Materials provided to You hereunder are not intended to be used without additional safeguards and/or process technology, to control or operate machines that can lead to personal injury, death, or severe physical or environmental damage, and if You make, use, or sell such machines, You agree to assume all liability therefor and will comply with all applicable safety-related laws, regulations, and best industry practices. Neither LICENSOR nor any Contributor shall be liable to any other party, in whole or in part, for any claims or damages arising from such use. 
+
+This disclaimer of warranty is an essential part of this My Jetson Nano Baseboard Open Source License and a condition for the grant of any rights granted under this My Jetson Nano Baseboard Open Source License.
+
+
+===========================
+7. LIMITATION OF LIABILITY.
+===========================
+
+In no event and under no legal theory, whether in tort (including negligence), contract, or otherwise, shall LICENSOR or any Contributor assume any liability or have any responsibility for the payment of damages, including any direct, indirect, special, incidental, or consequential damages of any character (including but not limited to damages for loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses) arising as a result of this My Jetson Nano Baseboard Open Source License, or arising out of the use or inability to use Your Design Product, or any other product manufactured by any other Contributor or other third party based on or derived from the Design Materials or the manufacture, sale, maintenance or support of Your Design Product or any other product (inclusive of any software) by other Contributor or other third party.
+
+
+========================
+8. WAIVER AND INDEMNITY.
+========================
+
+You agree to waive any and all claims against LICENSOR and each Contributor arising from Your 
+use of Design Materials. If Your use of the Design Materials, or any portion thereof, results in any liabilities, demands, damages, expenses or losses arising from such use, including (i) any death or personal injury that directly or indirectly results from Your use of (or inability to use) Design Materials, or (ii) any other damages from products based on, or resulting from Your use of (or inability to use) Design Materials, You shall indemnify and hold harmless LICENSOR and each Contributor to the extent permitted by law. In addition, You agree to defend, indemnify, and hold LICENSOR and each Contributor harmless from any claim brought by a third party alleging any defect in the design, manufacture, or any Design Product which You make, have made, sell, or distribute pursuant to this My Jetson Nano Baseboard Open Source License. Your sole remedy for any such matter shall be the immediate, unilateral termination of this My Jetson Nano Baseboard Open Source License.
+
+
+=========================================================
+|                                                       |
+|  END OF MY JETSON NANO BASEBOARD OPEN SOURCE LICENSE  |
+|                                                       |
+=========================================================
