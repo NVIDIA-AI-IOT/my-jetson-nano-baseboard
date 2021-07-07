@@ -36,7 +36,7 @@ You only need a computer to get started right now!
 1.	Add the symbol and footprint libraries as project-specific to your KiCAD program, following [this guide](https://support.snapeda.com/en/articles/2651507-how-to-import-into-kicad).
 1.	You are now set up to tinker with the files and launch your own hardware designs!
 
-Be sure to download the Jetson Nano Product Design Guide here (NVIDIA Developer account required) to help you with your design.
+Be sure to download the Jetson Nano Product Design Guide [here](https://developer.nvidia.com/embedded/downloads) (NVIDIA Developer account required) to help you with your design.
 
 If you want to make your boards and test them, you’ll need the Jetson Nano module (not included, can be bought as part of the developer kit [here](https://developer.nvidia.com/embedded/jetson-nano-developer-kit)). It is also helpful to have electronics equipment like an oscilloscope, a multimeter, and a soldering iron.
 
