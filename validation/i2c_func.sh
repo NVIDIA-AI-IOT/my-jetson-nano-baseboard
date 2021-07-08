@@ -42,18 +42,14 @@ import struct
 clockspeed=$(struct.unpack(">I", open('/proc/device-tree/soc/i2c@7e205000/clock-frequency').read()))
 
 # acceptable clock speed
-max=$(expr 400000000 \* 1.1)
+max=$(expr 400000 \* 1.1)
 
 if [clockspeed > max]
 then
-	echo -e "The test has failed: unacceptable clock speed. Actual clock speed was $clockspeed. Expected max 400MHz.\n"
+	echo -e "The test has failed: unacceptable clock speed. Actual clock speed was {$clockspeed}. Expected max 400kHz.\n"
 	exit
 fi
 
 
-echo "Passed I2C stress test. Actual clock speed is $clockspeed. Rated maximum is 400MHz."
-
-
-
-
+echo "Passed I2C stress test. Actual clock speed is $clockspeed. Rated maximum is 400kHz."
 
