@@ -7,29 +7,33 @@
 # assuming we have i2c chips to flash, this script tests i2c functionality by writing and reading
 # to a chip 500 times. It also checks that the clock does not exceed the maximum speed.
 
-# install i2c-tools
-sudo apt install i2c-tools
+# install i2c-tools, if necessary
+#sudo apt install i2c-tools
 
 # detect i2c devices
-alldevices=$(i2cdetect -y -l)
+echo -e "Please type the bus you wish to check:"
+read selbus
 
-echo -e "All devices: ${alldevices}. Please type an address below:\n"
+devices=$(i2cdetect -y $selbus)
+
+echo -e "All devices: \n${devices}. \nPlease type address below:"
 read seldevice
 
-chipaddress=0x04
 datatowrite=0xaa
+dataaddress=0x04
 
 # loop this 500 times: stress test
-for i in {1...500}
+for i in {1..500}
 do
 	# short write to i2c register and immediately read from them
-	i2cset -y $seldevice $chipaddress $datatowrite
-	dataread=$(i2cget -y $seldevice $chipaddress)
+	i2cset -y $selbus $seldevice $dataaddress $datatowrite b
+	dataread=$(i2cget -y $selbus $seldevice)
 
-	if [$dataread != $datatowrite]
+	if [[ "$dataread" != "$datatowrite" ]]
 	then
+		echo -e "$dataread"
 		echo -e "The test has failed: did not read correct write\n"
-		exit
+		break
 	fi
 done
 
