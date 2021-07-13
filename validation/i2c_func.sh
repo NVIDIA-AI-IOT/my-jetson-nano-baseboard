@@ -19,7 +19,7 @@ devices=$(i2cdetect -y $selbus)
 echo -e "All devices: \n${devices}. \nPlease type address below:"
 read seldevice
 
-datatowrite=0xaa
+datatowrite=0xd49
 dataaddress=0x04
 
 # loop this 500 times: stress test

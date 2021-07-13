@@ -17,7 +17,7 @@ This baseboard, as designed, contains:
 
 Use these files to kickstart your own application-specific baseboard or implement some quick and easy projects!
 
-## Getting Started
+## Quick Start
 
 You only need a computer to get started right now!
 1.	Install the appropriate version of KiCAD, an open source schematic and layout design program, for your operating system [here](https://www.kicad.org/download/).
@@ -40,4 +40,8 @@ Be sure to download the Jetson Nano Product Design Guide [here](https://develope
 
 If you want to make your boards and test them, you’ll need the Jetson Nano module (not included, can be bought as part of the developer kit [here](https://developer.nvidia.com/embedded/jetson-nano-developer-kit)). It is also helpful to have electronics equipment like an oscilloscope, a multimeter, and a soldering iron.
 
+## Questions and Improvements
 
+If you have a suggestion, please open an [issue](https://github.com/NVIDIA-AI-IOT/my-jetson-nano-baseboard/issues/new) on GitHub.
+
+Please share your projects with us on the [Jetson Developer Forums](https://forums.developer.nvidia.com/c/agx-autonomous-machines/jetson-embedded-systems/70).
