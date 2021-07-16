@@ -1,6 +1,7 @@
 import Jetson.GPIO as GPIO
 
 # script adapted from Jetson-GPIO samples
+# be sure to attach a servo motor to the header J10
 
 GPIO.setmode(GPIO.BCM)
 

@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# This script blinks the visual feedback LED on and off five times
+# This script blinks the visual feedback LED on the board, D7, on and off five times. No additional equipment is required.
+
 # GPIO03 is pin 66 as calculated in Tegra GPIO header file
 
 echo 66 > /sys/class/gpio/export
