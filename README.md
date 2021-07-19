@@ -22,17 +22,17 @@ Use these files to kickstart your own application-specific baseboard or implemen
 You only need a computer to get started right now!
 1.	Install the appropriate version of KiCAD, an open source schematic and layout design program, for your operating system [here](https://www.kicad.org/download/).
 1.	Download this GitHub repository either as a ZIP or on the command line.
-1.	Save the following symbol and footprint libraries to the “Design Files/Libraries” folder (you may have to make an account – alternatively, if you want the practice, you could try making them yourself):
+1.	Save the following symbol and footprint libraries to the ``design/libraries`` folder (you may have to make an account – alternatively, if you want the practice, you could try making them yourself):
 	1.	[B3SL-1002P](https://octopart.com/b3sl-1002p-omron-9515385)
 	1.	[TPD4E02B04DQAR](https://www.snapeda.com/parts/TPD4E02B04DQAR/Texas%20Instruments/view-part/)
-	1.	[3-1734592-0](https://www.te.com/usa-en/product-3-1734592-0.html)
+	1.	[3-1734592-0](https://www.snapeda.com/parts/3-1734592-0/TE%20Connectivity/view-part/)
 	1.	[DC-005-2.0A](https://www.snapeda.com/parts/DC-005/Best%20Inc./view-part/)
 	1.	[ACM2012-201-2P-T001](https://www.snapeda.com/parts/ACM2012-201-2P-T001/TDK/view-part/1217094/)
 	1.	[10029449-111RLF](https://octopart.com/10029449-111rlf-amphenol+icc+%2F+fci-90332945#CadModels)
 	1.	[67298-3090-0](https://octopart.com/67298-3090-molex-7124952#Specs)
-	1.	[2309413-1](https://www.te.com/usa-en/product-2309413-1.html)
+	1.	[2309413-1](https://www.snapeda.com/parts/2309413-1/TE%20Connectivity%20AMP%20Connectors/view-part/)
 
-1.	Open the project (.pro) file in KiCAD.
+1.	Open the project file, ``design/baseboard.pro``, in KiCAD.
 1.	Add the symbol and footprint libraries as project-specific to your KiCAD program, following [this guide](https://support.snapeda.com/en/articles/2651507-how-to-import-into-kicad).
 1.	You are now set up to tinker with the files and launch your own hardware designs!
 
