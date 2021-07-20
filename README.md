@@ -19,7 +19,7 @@ Use these files to kickstart your own application-specific baseboard or implemen
 
 ## Quick Start
 
-You only need a computer to get started right now!
+You only need a computer to get started right now! For a more in-depth setup guide, check out `docs/setup.md`.
 1.	Install the appropriate version of KiCAD, an open source schematic and layout design program, for your operating system [here](https://www.kicad.org/download/).
 1.	Download this GitHub repository either as a ZIP or on the command line.
 1.	Save the following symbol and footprint libraries to the “Design Files/Libraries” folder (you may have to make an account – alternatively, if you want the practice, you could try making them yourself):
