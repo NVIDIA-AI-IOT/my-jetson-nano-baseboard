@@ -43,8 +43,8 @@ Some symbol and footprint libraries are included with the download of the files 
 1.	[2309413-1](https://www.te.com/usa-en/product-2309413-1.html)
 
 To set these up, open the project (.pro) file and navigate to Preferences > Manage Symbol Libraries > Project Specific Libraries, and add the relevant library with the plus sign. Repeat for footprint libraries. 
-Upon reopening the schematic file, boxes with question marks should be replaced by symbols. If the boxes with question marks remain, you may have to re-select the proper symbol for the pat from the library.
 
+Upon reopening the schematic file, boxes with question marks should be replaced by symbols. If the boxes with question marks remain, you may have to re-select the proper symbol for the pat from the library.
 
 To run the sample projects, you will need several Python libraries. They can be installed using pip with the following command:
 
@@ -65,9 +65,16 @@ Here are some changes you may want to make:
 
 If you choose to change the files, be sure to run a Design Rules Check (in KiCAD, represented by a ladybug) and review your design yourself in order to limit mistakes.
 
+### Example: Removing the HDMI Connector
+
+When removing the HDMI connector, you'll have to remove the connector itself and the peripherals that are required for the proper operation of HDMI. These will be on the "HDMI Connections" pages. Remove every part on those pages, then look at the rest of the document to identify any HDMI connections you've broken. In this case, there are a number of HDMI signals going to the module - you will want to mark those as "not connected".
+
+Having removed the HDMI connections on the schematic, you then need to remove them on the layout. Generate a new netlist from the schematic, then load that into the PCB editor. You'll see far fewer components than before - you can use the extra space to make the board smaller, if you wish.
+
 ## 3. Making your boards
 
 PCBs can be manufactured pretty inexpensively nowadays, so it's possible to make your boards. When choosing a manufacturer, consider the lead time, cost, and functionality. Many will give you a price estimate directly on their websites when uploading your files. Note that some parts, like the 260-pin SODIMM connector will be difficult to solder by hand, so it's helpful to have the manufacturer do that for you (not all support assembly).
 
+Manufacturers will ask for Gerber files (provided as `manufacturing/gerbers_release.zip`), which contain instructions on where to lay copper on each layer. Drill files, also in that .zip, are also necessary to drill vias. If you are asking for assembly, the `manufacturing/assemble-top-pos.csv` is required.
 
 Enjoy your new baseboard!
