@@ -77,4 +77,17 @@ PCBs can be manufactured pretty inexpensively nowadays, so it's possible to make
 
 Manufacturers will ask for Gerber files (provided as `manufacturing/gerbers_release.zip`), which contain instructions on where to lay copper on each layer. Drill files, also in that .zip, are also necessary to drill vias. If you are asking for assembly, the `manufacturing/assemble-top-pos.csv` is required.
 
+## 4. Verifying the boards
+
+There are four main stages to validation:
+* Bringup
+	* Before powering on the board, check for shorts between power rails, and ensure the characteristics of diodes and transistors are accurate to the datasheet. This is the most important part of validation, and for the most part can be done with just a multimeter.
+* Functionality
+	* Powering on the board and testing all interfaces to make sure they work. This can be done with scripts in some cases - those are in `../validation`.
+* Power
+	* Testing the efficiency, noise, and other characteristics of power sources, as well as ensuring power sequence signals are correct. Needs an oscilloscope.
+* IO Electrical
+	* Ensuring that interfaces meet electrical specifications, where appropriate. This must be done with an oscilloscope.
+
+
 Enjoy your new baseboard!
