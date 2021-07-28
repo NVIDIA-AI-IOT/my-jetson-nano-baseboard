@@ -73,7 +73,7 @@ Having removed the HDMI connections on the schematic, you then need to remove th
 
 ## 3. Making your boards
 
-PCBs can be manufactured pretty inexpensively nowadays, so it's possible to make your boards. When choosing a manufacturer, consider the lead time, cost, and functionality. Many will give you a price estimate directly on their websites when uploading your files. Note that some parts, like the 260-pin SODIMM connector will be difficult to solder by hand, so it's helpful to have the manufacturer do that for you (not all support assembly).
+PCBs can be manufactured pretty inexpensively nowadays, so it's possible to make your boards. When choosing a manufacturer, consider the lead time, cost, and functionality. Many will give you a price estimate directly on their websites when uploading your files. Note that some parts, like the 260-pin SODIMM connector will be difficult to solder by hand, so it's helpful to have the manufacturer do that for you (not all support assembly). If you do have to solder complicated components by hand, it's helpful to order stencils, which will allow you to deposit solder paste very precisely. Some places will add them in for free or cheaply when you place your order.
 
 Manufacturers will ask for Gerber files (provided as `manufacturing/gerbers_release.zip`), which contain instructions on where to lay copper on each layer. Drill files, also in that .zip, are also necessary to drill vias. If you are asking for assembly, the `manufacturing/assemble-top-pos.csv` is required.
 
