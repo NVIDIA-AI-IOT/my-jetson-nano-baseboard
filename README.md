@@ -29,7 +29,6 @@ You only need a computer to get started right now! For a more in-depth setup gui
 	1.	[DC-005-2.0A](https://www.snapeda.com/parts/DC-005/Best%20Inc./view-part/)
 	1.	[ACM2012-201-2P-T001](https://www.snapeda.com/parts/ACM2012-201-2P-T001/TDK/view-part/1217094/)
 	1.	[10029449-111RLF](https://octopart.com/10029449-111rlf-amphenol+icc+%2F+fci-90332945#CadModels)
-	1.	[67298-3090-0](https://octopart.com/67298-3090-molex-7124952#Specs)
 	1.	[2309413-1](https://www.te.com/usa-en/product-2309413-1.html)
 
 1.	Open the project (.pro) file in KiCAD.
