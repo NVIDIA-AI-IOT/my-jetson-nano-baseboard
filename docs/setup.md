@@ -35,7 +35,6 @@ Some symbol and footprint libraries are included with the download of the files 
 
 1.	[B3SL-1002P](https://octopart.com/b3sl-1002p-omron-9515385)
 1.	[TPD4E02B04DQAR](https://www.snapeda.com/parts/TPD4E02B04DQAR/Texas%20Instruments/view-part/)
-1.	[3-1734592-0](https://www.te.com/usa-en/product-3-1734592-0.html)
 1.	[DC-005-2.0A](https://www.snapeda.com/parts/DC-005/Best%20Inc./view-part/)
 1.	[ACM2012-201-2P-T001](https://www.snapeda.com/parts/ACM2012-201-2P-T001/TDK/view-part/1217094/)
 1.	[10029449-111RLF](https://octopart.com/10029449-111rlf-amphenol+icc+%2F+fci-90332945#CadModels)
@@ -49,6 +48,8 @@ Upon reopening the schematic file, boxes with question marks should be replaced 
 To run the sample projects, you will need several Python libraries. They can be installed using pip with the following command:
 
 > pip3 install Jetson.GPIO smbus2 machine
+
+Because this operation requires internet, I recommend switching the module to the official baseboard and connecting it to the internet via Ethernet.
 
 ## 2. Editing & Designing
 
