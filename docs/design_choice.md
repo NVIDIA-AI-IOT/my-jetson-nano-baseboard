@@ -85,10 +85,14 @@ Level shifters are necessary because Tegra's GPIOs and UART signals have a 1.8V 
 
 ### OLED Display
 
-The specified OLED display is the QG-2864KLBEG01, from TopWin. All signals going to this display should be at 3.3V. The display was laid out using I2C, enabling users to practice using that protocol, although the display also supports 3-wire and 4-wire SPI as well as 8-bit 68XX and 80XX parallel microcontroller interfaces. The display's pin 14, an active-low reset, is tied to the 3V3_PGOOD signal. The I2C address pin, pin 15, is pulled high, with the option of being pulled low.
+All signals going to this display should be at 3.3V. The display was laid out using I2C, enabling users to practice using that protocol, although the display also supports 4-wire SPI as well as 8-bit 68XX and 80XX parallel microcontroller interfaces. The display's active-low reset is tied to the 3V3_PGOOD signal. The I2C address pin is pulled high, with the option of being pulled low.
 
-Note that the connector's pin numbers are the opposite of the display's (i.e. pin 1 on the display is pin 30 on the board).
+Note that the connector's pin numbers are the opposite of the display's (i.e. pin 1 on the display is pin 24 on the board).
 
 ### HDMI Connections
 
-A load switch was used with a current limit of 55 mA, as per the HDMI spec. A load switch was used instead of a resettable fuse, which would be cheaper, because the HDMI specification requires the 5V power to be off when the module is in sleep mode.
+A load switch was used with a current limit of 600 mA, the lowest possible for the load switch chip used. A load switch was used instead of a resettable fuse, which would be cheaper, because the HDMI specification requires the 5V power to be off when the module is in sleep mode.
+
+## SODIMM Connector
+
+Please do not force the module into the connector - doing so will irreparably damage it and cause signals to be misaligned.
