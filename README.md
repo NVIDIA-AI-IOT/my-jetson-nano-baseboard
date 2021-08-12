@@ -1,7 +1,8 @@
 # My Jetson Nano Baseboard
 
-![Rendering of the My Jetson Nano Baseboard](/assets/images/MyJetsonNanoBaseboardRender.png)
-<img src ="/assets/images/A00_front.jpg" alt="Picture of My Jetson Nano Baseboard" width="200"/>
+
+<img src ="/assets/images/MyJetsonNanoBaseboardRender.png" alt="Render of My Jetson Nano Baseboard" width="250"/>
+<img src ="/assets/images/A00_front.jpg" alt="Picture of My Jetson Nano Baseboard" width="250"/>
 
 This basic baseboard gives the user the foundation and the flexibility to design their own baseboard for the Jetson Nano. It also repurposes some of the Jetson Nano’s interface signals for simple beginner projects.
 
