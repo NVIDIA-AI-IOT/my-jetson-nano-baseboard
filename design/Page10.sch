@@ -22,8 +22,6 @@ USB1_D_N
 Wire Wire Line
 	2400 2800 2700 2800
 Wire Wire Line
-	2400 3000 2500 3000
-Wire Wire Line
 	2350 3400 2500 3400
 $Comp
 L Device:R R?
@@ -74,7 +72,6 @@ Wire Wire Line
 	1900 3000 2000 3000
 Wire Wire Line
 	2500 3400 2500 3000
-Connection ~ 2500 3000
 Wire Wire Line
 	2050 2350 1650 2350
 Wire Wire Line
@@ -309,33 +306,33 @@ $EndComp
 Wire Wire Line
 	9650 5200 9750 5200
 Wire Wire Line
-	9500 1500 8900 1500
-Text Label 8900 1500 0    50   ~ 0
-USB_DSP1_DN
-Text Label 8900 1400 0    50   ~ 0
-USB_DSP1_DP
-Wire Wire Line
-	9500 1400 8900 1400
-Text Label 9100 2600 0    50   ~ 0
-USB_DSP2_DN
-Text Label 9100 2500 0    50   ~ 0
-USB_DSP2_DP
-Wire Wire Line
 	9900 3700 9300 3700
 Text Label 9300 3700 0    50   ~ 0
-USB_DSP3_DN
+USB_DSP1_DN
 Text Label 9300 3600 0    50   ~ 0
-USB_DSP3_DP
+USB_DSP1_DP
 Wire Wire Line
 	9900 3600 9300 3600
+Text Label 8800 4850 0    50   ~ 0
+USB_DSP2_DN
+Text Label 8800 4750 0    50   ~ 0
+USB_DSP2_DP
 Wire Wire Line
-	9350 4850 8750 4850
-Text Label 8750 4850 0    50   ~ 0
+	9500 1500 8900 1500
+Text Label 8900 1500 0    50   ~ 0
+USB_DSP3_DN
+Text Label 8900 1400 0    50   ~ 0
+USB_DSP3_DP
+Wire Wire Line
+	9500 1400 8900 1400
+Wire Wire Line
+	9650 2600 9050 2600
+Text Label 9050 2600 0    50   ~ 0
 USB_DSP4_DN
-Text Label 8750 4750 0    50   ~ 0
+Text Label 9050 2500 0    50   ~ 0
 USB_DSP4_DP
 Wire Wire Line
-	9350 4750 8750 4750
+	9650 2500 9050 2500
 $Comp
 L Device:C C?
 U 1 1 5F07865B
@@ -424,7 +421,7 @@ U 1 1 5F0592E9
 P 10250 3100
 F 0 "J9" H 10528 2563 50  0000 L CNN
 F 1 "USB2.0_2Conn" H 10528 2472 50  0000 L CNN
-F 2 "Libraries:Molex-67298-3090-0" H 10250 3100 50  0001 C CNN
+F 2 "Connector_USB:USB_A_Wuerth_61400826021_Horizontal_Stacked" H 10250 3100 50  0001 C CNN
 F 3 "" H 10250 3100 50  0001 C CNN
 	1    10250 3100
 	1    0    0    -1  
@@ -435,7 +432,7 @@ U 2 1 5F0611A1
 P 10000 2000
 F 0 "J12" H 10278 1463 50  0000 L CNN
 F 1 "USB2.0_2Conn" H 9700 1850 50  0000 L CNN
-F 2 "Libraries:Molex-67298-3090-0" H 10000 2000 50  0001 C CNN
+F 2 "Connector_USB:USB_A_Wuerth_61400826021_Horizontal_Stacked" H 10000 2000 50  0001 C CNN
 F 3 "" H 10000 2000 50  0001 C CNN
 	2    10000 2000
 	1    0    0    -1  
@@ -446,7 +443,7 @@ U 2 1 5F061892
 P 9850 900
 F 0 "J9" H 10128 363 50  0000 L CNN
 F 1 "USB2.0_2Conn" H 9050 150 50  0000 L CNN
-F 2 "Libraries:Molex-67298-3090-0" H 9850 900 50  0001 C CNN
+F 2 "Connector_USB:USB_A_Wuerth_61400826021_Horizontal_Stacked" H 9850 900 50  0001 C CNN
 F 3 "" H 9850 900 50  0001 C CNN
 	2    9850 900 
 	1    0    0    -1  
@@ -457,7 +454,7 @@ U 1 1 5F0626C3
 P 9700 4250
 F 0 "J12" H 9978 3713 50  0000 L CNN
 F 1 "USB2.0_2Conn" H 9450 4100 50  0000 L CNN
-F 2 "Libraries:Molex-67298-3090-0" H 9700 4250 50  0001 C CNN
+F 2 "Connector_USB:USB_A_Wuerth_61400826021_Horizontal_Stacked" H 9700 4250 50  0001 C CNN
 F 3 "" H 9700 4250 50  0001 C CNN
 	1    9700 4250
 	1    0    0    -1  
@@ -1099,19 +1096,6 @@ Wire Wire Line
 Wire Wire Line
 	8450 4550 8500 4550
 $Comp
-L Device:EMI_Filter_CommonMode FL?
-U 1 1 5F231DB5
-P 2200 2900
-AR Path="/5EE263E8/5F231DB5" Ref="FL?"  Part="1" 
-AR Path="/5EEDF3FC/5F231DB5" Ref="FL3"  Part="1" 
-F 0 "FL3" H 2200 3181 50  0000 C CNN
-F 1 "EMI_Filter_CommonMode" H 2200 3090 50  0000 C CNN
-F 2 "Custom Footprints:FIL_ACM2012-201-2P-T001" H 2200 2940 50  0001 C CNN
-F 3 "~" H 2200 2940 50  0001 C CNN
-	1    2200 2900
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Crystal_GND24 Y1
 U 1 1 5F338391
 P 1300 4100
@@ -1387,11 +1371,11 @@ Connection ~ 11050 5800
 Wire Wire Line
 	7750 5850 7650 5850
 Connection ~ 7650 5850
-Text Label 8750 4550 0    39   ~ 0
+Text Label 8900 2300 0    39   ~ 0
 USB_DSP4_VBUS
-Text Label 9350 3400 0    39   ~ 0
+Text Label 8900 1200 0    39   ~ 0
 USB_DSP3_VBUS
-Text Label 9150 2300 0    39   ~ 0
+Text Label 8800 4550 0    39   ~ 0
 USB_DSP2_VBUS
 Text Label 7750 5500 2    39   ~ 0
 USB_DSP2_VBUS
@@ -1415,7 +1399,7 @@ Wire Notes Line
 	10750 5400 10750 700 
 Wire Notes Line
 	7950 700  7950 5400
-Text Label 8900 1200 0    39   ~ 0
+Text Label 9050 3400 0    39   ~ 0
 USB_DSP1_VBUS
 Wire Wire Line
 	8200 1000 8200 1200
@@ -1472,9 +1456,9 @@ Connection ~ 8850 3400
 Wire Wire Line
 	8850 3400 9900 3400
 Wire Wire Line
-	9100 2500 9650 2500
+	8800 4750 9350 4750
 Wire Wire Line
-	9100 2600 9650 2600
+	8800 4850 9350 4850
 Connection ~ 8750 2300
 Wire Wire Line
 	8750 2300 9650 2300
@@ -1506,10 +1490,22 @@ F 3 "" H 1400 3900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1300 3900 1400 3900
-Connection ~ 9900 3400
-Connection ~ 9900 3700
-Connection ~ 9900 3600
-Connection ~ 10200 4050
 Connection ~ 9750 5200
 Connection ~ 9900 1850
+Connection ~ 2500 3000
+Wire Wire Line
+	2400 3000 2500 3000
+$Comp
+L CustomSymbols:EMI_Filter_LL FL?
+U 1 1 5F231DB5
+P 2200 2900
+AR Path="/5EE263E8/5F231DB5" Ref="FL?"  Part="1" 
+AR Path="/5EEDF3FC/5F231DB5" Ref="FL3"  Part="1" 
+F 0 "FL3" H 2200 3181 50  0000 C CNN
+F 1 "EMI_Filter_CommonMode" H 2200 3090 50  0000 C CNN
+F 2 "Custom Footprints:FIL_ACM2012-201-2P-T001" H 2200 2940 50  0001 C CNN
+F 3 "~" H 2200 2940 50  0001 C CNN
+	1    2200 2900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -121,7 +121,7 @@ F 3 "" H 3600 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CustomSymbols:TPD1E10B06DPYR-TPD1E10B06DPYR D?
+L Device:D_TVS D?
 U 1 1 5F232BAF
 P 4300 3650
 AR Path="/5EF267A4/5F232BAF" Ref="D?"  Part="1" 
@@ -323,11 +323,12 @@ Connection ~ 4550 6050
 Text Label 5250 6050 2    50   ~ 0
 HDMI_HPD_CON
 $Comp
-L CustomSymbols:AP2281-3WG-7-LoadSwitch U?
+L CustomSymbols:AP2281-3WG-7 U?
 U 1 1 5F2ABE14
 P 8100 5100
 AR Path="/5F02109E/5F2ABE14" Ref="U?"  Part="1" 
 AR Path="/5F22A597/5F2ABE14" Ref="U22"  Part="1" 
+AR Path="/5F2ABE14" Ref="U22"  Part="1" 
 F 0 "U22" H 8900 5487 60  0000 C CNN
 F 1 "AP2281-3WG-7" H 8900 5381 60  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6" H 8900 5340 60  0001 C CNN
@@ -421,8 +422,6 @@ HDMI CONNECTIONS PART 2
 Text Notes 4550 3850 0    50   ~ 0
 No stuff ESD diode
 Wire Wire Line
-	4300 3250 4300 3000
-Wire Wire Line
 	3600 3000 4300 3000
 Wire Wire Line
 	4300 3000 5000 3000
@@ -480,7 +479,7 @@ P 7950 3600
 AR Path="/5EEF7C46/5F22E424" Ref="R?"  Part="1" 
 AR Path="/5F22A597/5F22E424" Ref="R91"  Part="1" 
 F 0 "R91" H 8000 3600 39  0000 L CNN
-F 1 "120k" H 8000 3550 39  0000 L CNN
+F 1 "11k" H 8000 3550 39  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7880 3600 39  0001 C CNN
 F 3 "~" H 7950 3600 39  0001 C CNN
 F 4 "0603" H 8000 3500 39  0000 L CNN "Package"
@@ -588,8 +587,6 @@ Text Notes 900  4000 0    50   ~ 0
 R80 and R81 chosen according to HDMI spec -\nequivalent parallel resistance must be within 5% of 27k
 Wire Wire Line
 	3600 3500 3600 3450
-Wire Wire Line
-	4300 4100 4300 4050
 $Comp
 L power:GND #PWR0176
 U 1 1 5F24CF7F
@@ -612,7 +609,7 @@ HDMI_PWR_ILIM
 Wire Wire Line
 	1300 3450 1300 3600
 $Comp
-L CustomSymbols:BAS70-05-Diode D4
+L CustomSymbols:BAS70-05 D4
 U 1 1 60CD39EA
 P 2050 3300
 F 0 "D4" V 2150 3900 39  0000 C CNN
@@ -799,7 +796,7 @@ F 3 "" H 10350 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CustomSymbols:MT9700-os_baseboard-rescue U10
+L CustomSymbols:MT9700 U10
 U 1 1 60DA8B9B
 P 7550 2550
 F 0 "U10" H 7550 2551 39  0000 C CNN
@@ -826,20 +823,20 @@ AR Path="/5EF267A4/60E728DE" Ref="Q?"  Part="1"
 AR Path="/5EEF7C46/60E728DE" Ref="Q?"  Part="1" 
 AR Path="/5F22A597/60E728DE" Ref="Q14"  Part="1" 
 F 0 "Q14" V 2050 3000 50  0000 L CNN
-F 1 "DMN26D0UFB4" V 2150 3000 50  0000 L CNN
-F 2 "Package_DFN_QFN:Diodes_DFN1006-3" H 2900 2825 50  0001 L CIN
+F 1 "DMN26D0UT-7" V 2150 3000 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-523" H 2900 2825 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 2700 2900 50  0001 L CNN
 F 4 "MAX_VOLTAGE=20V" V 2250 3000 35  0000 L CNN "MAX_VOLTAGE"
-F 5 "CONTINUOUS_CURRENT=0.140A" V 2300 3000 35  0000 L CNN "CONTINUOUS_CURRENT"
-F 6 "R_DS_ON=1.8ohm@4.5V/2.5ohm@2.5V/3.4ohm@1.8V" V 2350 3000 35  0000 L CNN "R_DS_ON"
+F 5 "CONTINUOUS_CURRENT=0.230A" V 2300 3000 35  0000 L CNN "CONTINUOUS_CURRENT"
+F 6 "R_DS_ON=3ohm@4.5V/4ohm@2.5V/6ohm@1.8V/10ohm@1.5V" V 2350 3000 35  0000 L CNN "R_DS_ON"
 F 7 "MAX_CURRENT=0.805A" V 2400 3000 35  0000 L CNN "MAX_CURRENT"
-F 8 "MAX_WATTAGE=0.35W" V 2450 3000 35  0000 L CNN "MAX_WATTAGE"
-F 9 "MAX_V_GS_TH=0.9V" V 2500 3000 35  0000 L CNN "V_GS_TH_MAX"
+F 8 "MAX_WATTAGE=0.300W" V 2450 3000 35  0000 L CNN "MAX_WATTAGE"
+F 9 "MAX_V_GS_TH=1V" V 2500 3000 35  0000 L CNN "V_GS_TH_MAX"
 	1    2700 2900
 	0    1    1    0   
 $EndComp
 Text Notes 9450 2400 0    39   ~ 0
-R91 chosen so the current limit is 55mA (HDMI spec),\nwith a tolerance of 1%.\n\nIset = 6.8kOhm / R
+R91 chosen so the current limit is 600mA, the minimum \nfor this load switch, with a tolerance of 1%.\n\nIset = 6.8kOhm / R
 Wire Notes Line
 	9450 2650 11050 2650
 Wire Notes Line
@@ -853,15 +850,19 @@ R (Ohm)
 Text Notes 10600 2650 0    39   ~ 0
 I (A)\n
 Text Notes 9850 2800 0    39   ~ 0
-120k\n
+11k\n
 Text Notes 10600 2800 0    39   ~ 0
-56.7m\n
+0.618\n
 Text Notes 9850 2950 0    39   ~ 0
-121.2k\n
+11.11k
 Text Notes 9850 3100 0    39   ~ 0
-118.8k
+10.89k
 Text Notes 10600 3100 0    39   ~ 0
-57.2m
+0.624
 Text Notes 10600 2950 0    39   ~ 0
-56.1m
+0.612
+Wire Wire Line
+	4300 3800 4300 4100
+Wire Wire Line
+	4300 3000 4300 3500
 $EndSCHEMATC

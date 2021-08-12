@@ -126,7 +126,7 @@ Wire Wire Line
 Wire Wire Line
 	3700 2450 3700 2900
 $Comp
-L CustomSymbols:NANO-nvidia_nano-jetbot-mini-rescue-os_baseboard-rescue-os_baseboard-rescue J?
+L CustomSymbols:SODIMM_260 J?
 U 5 1 5F02BE1F
 P 1450 2400
 AR Path="/5F02BE1F" Ref="J?"  Part="5" 
@@ -284,9 +284,9 @@ Text GLabel 7300 3600 2    50   Output ~ 0
 GPIO03
 Text GLabel 7300 3700 2    50   Output ~ 0
 GPIO04
-Text GLabel 7300 3800 2    50   Output ~ 0
+Text GLabel 7350 3800 2    50   Output ~ 0
 GPIO05
-Text GLabel 7300 3900 2    50   Output ~ 0
+Text GLabel 7350 3900 2    50   Output ~ 0
 GPIO06
 Text GLabel 7300 4000 2    50   BiDi ~ 0
 GPIO07
@@ -298,7 +298,7 @@ Text GLabel 7300 4400 2    50   BiDi ~ 0
 GPIO11
 Text GLabel 7300 4600 2    50   BiDi ~ 0
 GPIO13
-Text GLabel 7300 4300 2    50   Input ~ 0
+Text GLabel 7350 4300 2    50   Input ~ 0
 GPIO10
 Text GLabel 7300 4500 2    50   BiDi ~ 0
 GPIO12
@@ -580,7 +580,7 @@ I2C2_SDA
 Wire Wire Line
 	3050 2600 4500 2600
 $Comp
-L CustomSymbols:NANO-nvidia_nano-jetbot-mini-rescue-os_baseboard-rescue-os_baseboard-rescue J?
+L CustomSymbols:SODIMM_260 J?
 U 6 1 5F06564D
 P 6500 2200
 AR Path="/5F06564D" Ref="J?"  Part="6" 
@@ -845,4 +845,10 @@ Wire Wire Line
 Connection ~ 3550 2800
 Wire Wire Line
 	3550 2800 4500 2800
+Wire Wire Line
+	7350 4300 7300 4300
+Wire Wire Line
+	7350 3900 7300 3900
+Wire Wire Line
+	7350 3800 7300 3800
 $EndSCHEMATC

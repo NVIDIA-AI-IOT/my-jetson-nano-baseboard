@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CustomSymbols:NANO-nvidia_nano-jetbot-mini-rescue-os_baseboard-rescue-os_baseboard-rescue J?
+L CustomSymbols:SODIMM_260 J?
 U 1 1 5EFE4BC1
 P 1450 1450
 AR Path="/5EFE4BC1" Ref="J?"  Part="1" 
@@ -79,11 +79,9 @@ F 3 "" H 8800 4250 50  0001 C CNN
 $EndComp
 Text Notes 7750 900  2    197  ~ 0
 SODIMM CONNECTIONS PART 1
-Wire Wire Line
-	8800 1950 8800 1700
 Connection ~ 8800 1950
 $Comp
-L CustomSymbols:NANO-nvidia_nano-jetbot-mini-rescue-os_baseboard-rescue-os_baseboard-rescue J?
+L CustomSymbols:SODIMM_260 J?
 U 3 1 5EFF7EC6
 P 5600 1450
 AR Path="/5EFF7EC6" Ref="J?"  Part="3" 
@@ -105,7 +103,7 @@ NoConn ~ 6400 6750
 NoConn ~ 6400 6950
 NoConn ~ 6400 7050
 $Comp
-L CustomSymbols:NANO-nvidia_nano-jetbot-mini-rescue-os_baseboard-rescue-os_baseboard-rescue J?
+L CustomSymbols:SODIMM_260 J?
 U 7 1 5F01261C
 P 3500 1450
 AR Path="/5F01261C" Ref="J?"  Part="7" 
@@ -129,7 +127,7 @@ F 3 "" H 4300 7500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CustomSymbols:NANO-nvidia_nano-jetbot-mini-rescue-os_baseboard-rescue-os_baseboard-rescue J?
+L CustomSymbols:SODIMM_260 J?
 U 8 1 5F018709
 P 8000 1850
 AR Path="/5F018709" Ref="J?"  Part="8" 
@@ -248,201 +246,177 @@ F 8 "20%" H 9750 1900 39  0000 C CNN "Tolerance"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4300 1550 4300 1650
+	8800 1950 8800 2050
+Wire Wire Line
+	4300 7500 4300 7150
 Connection ~ 4300 1650
 Wire Wire Line
-	4300 1650 4300 1750
+	4300 1650 4300 1550
 Connection ~ 4300 1750
 Wire Wire Line
-	4300 1750 4300 1850
+	4300 1750 4300 1650
 Connection ~ 4300 1850
 Wire Wire Line
-	4300 1850 4300 1950
-Connection ~ 4300 7150
-Wire Wire Line
-	4300 7150 4300 7500
+	4300 1850 4300 1750
 Connection ~ 4300 1950
 Wire Wire Line
-	4300 1950 4300 2050
+	4300 1950 4300 1850
 Connection ~ 4300 2050
 Wire Wire Line
-	4300 2050 4300 2150
+	4300 2050 4300 1950
 Connection ~ 4300 2150
 Wire Wire Line
-	4300 2150 4300 2250
+	4300 2150 4300 2050
 Connection ~ 4300 2250
 Wire Wire Line
-	4300 2250 4300 2350
+	4300 2250 4300 2150
 Connection ~ 4300 2350
 Wire Wire Line
-	4300 2350 4300 2450
+	4300 2350 4300 2250
 Connection ~ 4300 2450
 Wire Wire Line
-	4300 2450 4300 2550
+	4300 2450 4300 2350
 Connection ~ 4300 2550
 Wire Wire Line
-	4300 2550 4300 2650
+	4300 2550 4300 2450
 Connection ~ 4300 2650
 Wire Wire Line
-	4300 2650 4300 2750
+	4300 2650 4300 2550
 Connection ~ 4300 2750
 Wire Wire Line
-	4300 2750 4300 2850
+	4300 2750 4300 2650
 Connection ~ 4300 2850
 Wire Wire Line
-	4300 2850 4300 2950
+	4300 2850 4300 2750
 Connection ~ 4300 2950
 Wire Wire Line
-	4300 2950 4300 3050
+	4300 2950 4300 2850
 Connection ~ 4300 3050
 Wire Wire Line
-	4300 3050 4300 3150
+	4300 3050 4300 2950
 Connection ~ 4300 3150
 Wire Wire Line
-	4300 3150 4300 3250
+	4300 3150 4300 3050
 Connection ~ 4300 3250
 Wire Wire Line
-	4300 3250 4300 3350
+	4300 3250 4300 3150
 Connection ~ 4300 3350
 Wire Wire Line
-	4300 3350 4300 3450
+	4300 3350 4300 3250
 Connection ~ 4300 3450
 Wire Wire Line
-	4300 3450 4300 3550
+	4300 3450 4300 3350
 Connection ~ 4300 3550
 Wire Wire Line
-	4300 3550 4300 3650
+	4300 3550 4300 3450
 Connection ~ 4300 3650
 Wire Wire Line
-	4300 3650 4300 3750
+	4300 3650 4300 3550
 Connection ~ 4300 3750
 Wire Wire Line
-	4300 3750 4300 3850
+	4300 3750 4300 3650
 Connection ~ 4300 3850
 Wire Wire Line
-	4300 3850 4300 3950
+	4300 3850 4300 3750
 Connection ~ 4300 3950
 Wire Wire Line
-	4300 3950 4300 4050
+	4300 3950 4300 3850
 Connection ~ 4300 4050
 Wire Wire Line
-	4300 4050 4300 4150
+	4300 4050 4300 3950
 Connection ~ 4300 4150
 Wire Wire Line
-	4300 4150 4300 4250
+	4300 4150 4300 4050
 Connection ~ 4300 4250
 Wire Wire Line
-	4300 4250 4300 4350
+	4300 4250 4300 4150
 Connection ~ 4300 4350
 Wire Wire Line
-	4300 4350 4300 4450
+	4300 4350 4300 4250
 Connection ~ 4300 4450
 Wire Wire Line
-	4300 4450 4300 4550
+	4300 4450 4300 4350
 Connection ~ 4300 4550
 Wire Wire Line
-	4300 4550 4300 4650
+	4300 4550 4300 4450
 Connection ~ 4300 4650
 Wire Wire Line
-	4300 4650 4300 4750
+	4300 4650 4300 4550
 Connection ~ 4300 4750
 Wire Wire Line
-	4300 4750 4300 4850
+	4300 4750 4300 4650
 Connection ~ 4300 4850
 Wire Wire Line
-	4300 4850 4300 4950
+	4300 4850 4300 4750
 Connection ~ 4300 4950
 Wire Wire Line
-	4300 4950 4300 5050
+	4300 4950 4300 4850
 Connection ~ 4300 5050
 Wire Wire Line
-	4300 5050 4300 5150
+	4300 5050 4300 4950
 Connection ~ 4300 5150
 Wire Wire Line
-	4300 5150 4300 5250
+	4300 5150 4300 5050
 Connection ~ 4300 5250
 Wire Wire Line
-	4300 5250 4300 5350
+	4300 5250 4300 5150
 Connection ~ 4300 5350
 Wire Wire Line
-	4300 5350 4300 5450
+	4300 5350 4300 5250
 Connection ~ 4300 5450
 Wire Wire Line
-	4300 5450 4300 5550
+	4300 5450 4300 5350
 Connection ~ 4300 5550
 Wire Wire Line
-	4300 5550 4300 5650
+	4300 5550 4300 5450
 Connection ~ 4300 5650
 Wire Wire Line
-	4300 5650 4300 5750
+	4300 5650 4300 5550
 Connection ~ 4300 5750
 Wire Wire Line
-	4300 5750 4300 5850
+	4300 5750 4300 5650
 Connection ~ 4300 5850
 Wire Wire Line
-	4300 5850 4300 5950
+	4300 5850 4300 5750
 Connection ~ 4300 5950
 Wire Wire Line
-	4300 5950 4300 6050
+	4300 5950 4300 5850
 Connection ~ 4300 6050
 Wire Wire Line
-	4300 6050 4300 6150
+	4300 6050 4300 5950
 Connection ~ 4300 6150
 Wire Wire Line
-	4300 6150 4300 6250
+	4300 6150 4300 6050
 Connection ~ 4300 6250
 Wire Wire Line
-	4300 6250 4300 6350
+	4300 6250 4300 6150
 Connection ~ 4300 6350
 Wire Wire Line
-	4300 6350 4300 6450
+	4300 6350 4300 6250
 Connection ~ 4300 6450
 Wire Wire Line
-	4300 6450 4300 6550
+	4300 6450 4300 6350
 Connection ~ 4300 6550
 Wire Wire Line
-	4300 6550 4300 6650
+	4300 6550 4300 6450
 Connection ~ 4300 6650
 Wire Wire Line
-	4300 6650 4300 6750
+	4300 6650 4300 6550
 Connection ~ 4300 6750
 Wire Wire Line
-	4300 6750 4300 6850
+	4300 6750 4300 6650
 Connection ~ 4300 6850
 Wire Wire Line
-	4300 6850 4300 6950
+	4300 6850 4300 6750
 Connection ~ 4300 6950
 Wire Wire Line
-	4300 6950 4300 7050
+	4300 6950 4300 6850
 Connection ~ 4300 7050
 Wire Wire Line
-	4300 7050 4300 7150
+	4300 7050 4300 6950
+Connection ~ 4300 7150
 Wire Wire Line
-	8800 2850 8800 2750
-Connection ~ 8800 2050
-Wire Wire Line
-	8800 2050 8800 1950
-Connection ~ 8800 2150
-Wire Wire Line
-	8800 2150 8800 2050
-Connection ~ 8800 2250
-Wire Wire Line
-	8800 2250 8800 2150
-Connection ~ 8800 2350
-Wire Wire Line
-	8800 2350 8800 2250
-Connection ~ 8800 2450
-Wire Wire Line
-	8800 2450 8800 2350
-Connection ~ 8800 2550
-Wire Wire Line
-	8800 2550 8800 2450
-Connection ~ 8800 2650
-Wire Wire Line
-	8800 2650 8800 2550
-Connection ~ 8800 2750
-Wire Wire Line
-	8800 2750 8800 2650
+	4300 7150 4300 7050
 Wire Wire Line
 	8800 4250 8800 4050
 Connection ~ 8800 3150
@@ -473,4 +447,30 @@ Wire Wire Line
 Connection ~ 8800 4050
 Wire Wire Line
 	8800 4050 8800 3950
+Wire Wire Line
+	8800 1950 8800 1700
+Connection ~ 8800 2050
+Wire Wire Line
+	8800 2050 8800 2150
+Connection ~ 8800 2150
+Wire Wire Line
+	8800 2150 8800 2250
+Connection ~ 8800 2250
+Wire Wire Line
+	8800 2250 8800 2350
+Connection ~ 8800 2350
+Wire Wire Line
+	8800 2350 8800 2450
+Connection ~ 8800 2450
+Wire Wire Line
+	8800 2450 8800 2550
+Connection ~ 8800 2550
+Wire Wire Line
+	8800 2550 8800 2650
+Connection ~ 8800 2650
+Wire Wire Line
+	8800 2650 8800 2750
+Connection ~ 8800 2750
+Wire Wire Line
+	8800 2750 8800 2850
 $EndSCHEMATC

@@ -30,8 +30,6 @@ F 3 "" H 2150 4750 50  0001 C CNN
 $EndComp
 NoConn ~ 2450 4050
 Wire Wire Line
-	2050 4350 2150 4350
-Wire Wire Line
 	7150 2800 7150 3350
 Wire Wire Line
 	7150 2800 6500 2800
@@ -63,8 +61,6 @@ F 3 "~" H 2300 3800 50  0001 C CNN
 	1    2150 3850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2150 4350 2150 4750
 $Comp
 L Device:C C?
 U 1 1 5F19977D
@@ -160,7 +156,7 @@ USB2_FILT_P
 Text Label 6700 3950 2    50   ~ 0
 USB2_FILT_N
 $Comp
-L Device:EMI_Filter_CommonMode FL?
+L CustomSymbols:EMI_Filter_LL FL?
 U 1 1 5F22F923
 P 5200 3900
 AR Path="/5EE263E8/5F22F923" Ref="FL?"  Part="1" 
@@ -358,11 +354,6 @@ Connection ~ 5450 4000
 Wire Wire Line
 	5450 4000 6100 4000
 Wire Wire Line
-	2050 4350 2050 4250
-Wire Wire Line
-	2150 4250 2150 4350
-Connection ~ 2150 4350
-Wire Wire Line
 	2450 3650 3050 3650
 $Comp
 L power:GND #PWR090
@@ -490,4 +481,19 @@ F 3 "" H 6050 4650 50  0001 C CNN
 	1    6050 4650
 	0    1    1    0   
 $EndComp
+$Comp
+L power:GND #PWR0204
+U 1 1 610DEBF1
+P 2050 4450
+F 0 "#PWR0204" H 2050 4200 50  0001 C CNN
+F 1 "GND" H 2055 4277 50  0000 C CNN
+F 2 "" H 2050 4450 50  0001 C CNN
+F 3 "" H 2050 4450 50  0001 C CNN
+	1    2050 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 4250 2050 4450
+Wire Wire Line
+	2150 4250 2150 4750
 $EndSCHEMATC

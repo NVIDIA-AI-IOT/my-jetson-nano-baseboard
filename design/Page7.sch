@@ -215,7 +215,7 @@ Wire Wire Line
 Wire Wire Line
 	3500 3700 3950 3700
 $Comp
-L Device:EMI_Filter_CommonMode FL1
+L CustomSymbols:EMI_Filter_LL FL1
 U 1 1 5F22DF4B
 P 4600 3800
 F 0 "FL1" H 4600 3950 50  0000 C CNN
